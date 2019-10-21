@@ -49,7 +49,7 @@ public class TestActivity extends AppCompatActivity {
         apiQuestions=retrofit.create(ApiQuestions.class);
 
 
-        getQuestion();
+      //  getQuestion();
         getAllQuestion();
     }
 
@@ -63,12 +63,12 @@ public class TestActivity extends AppCompatActivity {
                     txtQuestion.setText(response.code());
                 }
 
-                List<Question> users=response.body();
-                for (Question user:users)
+                List<Question> questions=response.body();
+                for (Question question:questions)
                 {
                     String content="";
-                    content+="ID"+user.getTime()+"\n";
-                    content+="User ID "+user.getText()+"\n\n";
+                    content+="ID"+question.getTime()+"\n";
+                    content+="User ID "+question.getText()+"\n\n";
                     txtQuestion.append(content);
                 }
 
