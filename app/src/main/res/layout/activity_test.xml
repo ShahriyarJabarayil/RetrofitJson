@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/testBGcolor"
     tools:context=".TestActivity">
 
     <LinearLayout
@@ -14,22 +15,38 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/leftpre"
+            android:id="@+id/imgprevious"/>
         <TextView
+            android:layout_marginLeft="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sual No "/>
 
         <TextView
+            android:id="@+id/txtquest_no"
             android:layout_marginLeft="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5/7 "/>
+
         <TextView
+            android:textSize="20sp"
             android:id="@+id/txttime"
             android:layout_marginLeft="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="time "/>
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/rightnext"
+            android:id="@+id/imgnext"/>
+
 
     </LinearLayout>
     <LinearLayout
@@ -38,9 +55,10 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <ImageView
-            android:layout_width="250dp"
-            android:layout_height="150dp" />
+            android:layout_width="254dp"
+            android:layout_height="169dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -52,7 +70,8 @@
             android:id="@+id/txtquestion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sual beledir?"/>
+            android:text="Sual beledir?"
+            android:textSize="@dimen/questtextsize"/>
     </LinearLayout>
 
     <LinearLayout
